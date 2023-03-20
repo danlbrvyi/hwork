@@ -1,0 +1,13 @@
+print('6. Проверка, является ли каждая цифра в числе четной:?')
+number = int(input('Введите число: '))
+all_digits_even = True
+
+for digit in str(number):
+    if int(digit) % 2 != 0:
+        all_digits_even = False
+        break
+
+if all_digits_even:
+    print('Каждая цифра в числе является четной')
+else:
+    print('Число содержит нечетные цифры')

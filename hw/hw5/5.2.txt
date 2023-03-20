@@ -1,0 +1,89 @@
+Reversed sequence:
+https://www.codewars.com/kata/5a00e05cc374cb34d100000d
+
+def reverse_seq(n):
+    list=[]
+    while n >= 1:
+        list.append(n)
+        n -= 1
+    return list
+
+Calculate average:
+https://www.codewars.com/kata/57a2013acf1fa5bfc4000921
+
+def find_average(numbers):
+    average = sum(numbers) / len(numbers)
+    return average
+    pass
+
+How good are you really?
+https://www.codewars.com/kata/5601409514fc93442500010b
+
+def better_than_average(class_points, your_points):
+    class_average = sum(class_points) / len(class_points)
+    if class_average > your_points:
+        return False
+    else:
+        return True
+
+Return Negative:
+https://www.codewars.com/kata/55685cd7ad70877c23000102
+
+def make_negative(number):
+    if number > 0:
+        number = number - (2 * number)
+        return number
+    else:
+        return number
+    pass
+
+Function 1 - hello world:
+https://www.codewars.com/kata/523b4ff7adca849afe000035
+
+def greet():
+    return 'hello world!'
+
+MakeUpperCase:
+https://www.codewars.com/kata/57a0556c7cb1f31ab3000ad7
+
+def make_upper_case(s):
+    return s.upper()
+
+Beginner Series #2 Clock:
+https://www.codewars.com/kata/55f9bca8ecaa9eac7100004a
+
+def past(h, m, s):
+    result = 3600000 * h + 60000 * m + 1000 * s
+    return result
+
+Even or Odd:
+https://www.codewars.com/kata/53da3dbb4a5168369a0000fe
+
+def even_or_odd(number):
+    if number % 2 == 0:
+        return 'Even'
+    else:
+        return 'Odd'
+
+Convert boolean values to strings 'Yes' or 'No'.:
+https://www.codewars.com/kata/53369039d7ab3ac506000467
+
+def bool_to_word(boolean): 
+    if boolean == True:
+        return 'Yes'
+    else:
+        return 'No'
+
+Multiply the number:
+https://www.codewars.com/kata/5708f682c69b48047b000e07
+
+def multiply(n):
+    i = len(str(n))
+    if n > 0:
+        n = n * 5 ** i
+    else:
+        n = n * 5 ** (i - 1)
+    return n
+
+
+

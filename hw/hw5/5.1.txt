@@ -1,0 +1,34 @@
+5.1.1
+
+def down(string):
+    return string.lower()
+
+def up(string):
+    return string.upper()
+
+list_strings = 'I lOvE ALL WoRLd'.split()
+print(list(map(down, list_strings)))
+print(list(map(up, list_strings)))
+
+5.1.2
+
+number = int(input('Введите число: '))
+
+def square(number):
+    print(number ** 2)
+
+def prostoe_number(number):
+    if number < 2:
+        return print('Число НЕ простое')
+    elif number > 2:
+        for i in range(2, 11):
+            if number % i == 0:
+                return print('Число НЕ простое')
+            else:
+                return print('Число простое')
+    else:
+        #для числа 2
+        return print('Число простое')
+
+square(number)
+prostoe_number(number)

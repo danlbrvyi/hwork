@@ -1,0 +1,16 @@
+print('Введите 3 числа')
+fizz = int(input('Первое число: '))
+buzz = int(input('Второе число: '))
+finish = int(input('Третье число: '))
+
+for i in range(1, finish + 1):
+	res1 = i % fizz
+	res2 = i % buzz
+	if res1 == 0:
+		print('F')
+		if res2 == 0:
+			print('FB')
+	elif res2 == 0:
+		print('B')
+	else:
+		print(i)
